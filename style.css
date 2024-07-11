@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 2000px; */
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:#f9f7f7d0 ;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.cart{
+    padding: 8px 22px;
+    color: #FFFFFF;
+    background: #D15700;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+}
+.p{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #D15700;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    border: none;
+    margin-top: 50px;
+
+    .list {
+        
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #0000;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+
+.list {
+    display: flex;
+    gap: 50px;
+    border: none;
+}
+
+.card {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.card h5 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.card>div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card button {
+    padding: 6px 22px;
+    background: #FFF0E6;
+    color: #D15700;
+    font-weight: 500;
+    font-size: 16px;
+    background-repeat: 15px;
+    border-radius: 16px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.card img {
+    position: relative;
+    top: -5px;
+    transition: top ease 0.3s;
+}
+
+.card img:hover {
+    top: 0;
+}
+
+
+
+/* .vybrait1 {
+    position: absolute;
+    background-color: #00000060;
+    width: 100%;
+    height: 100vh;
+    inset: 0;
+
+    .x{
+        margin-left: 1200px;
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+
+    .vybrait-content {
+        width: 800px;
+        margin: auto;
+        border-radius: 10px;
+        padding: 20px;
+        background: #FFFFFF;
+    }
+
+    .vybrait-content button {
+        width: 200px;
+        color: #FFFFFF;
+        background: #D15700;
+        border: none;
+        border-radius: 18px;
+    }
+} */
+
+
+.popup{
+    position: absolute;
+    inset: 0;
+    background-color: #00000850;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    .popup__content{
+        width: 800px;
+        height: 500px;
+        border-radius: 10px;
+        padding: 20px;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .popup__close{
+            position: absolute;
+            right: -20px;
+            top: 5px;
+            font-size: 24px;
+            font-weight: 800;
+            color: #FFFFFF;
+            cursor: pointer;
+
+            .img{
+                width: 70%;
+                margin: auto;
+            }
+        }
+
+        .texts{
+            padding: 50px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .name{
+                font-size: 32px;
+            }
+            .desc{
+                font-size: 20px;
+            }
+            button{
+                background: #D15700;
+                color: #FFFFFF;
+                font-size: 18px;
+                padding: 8px 22px;
+                width: 100%;
+                border-radius: 30px;
+            }
+            button:hover{
+                background: #fa9f5ed8;
+            }
+        }
+    }
+}
+
+
+
+
+.cart-list{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 450px;
+    background: #FFFFFF;
+    height: 100vh;
+    display: none;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    height: 100vh;
+    background: #00000095;
+    display: none;
+}
+
+.x{
+    position: absolute;
+    background: red;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #FFFFFF;
+}
